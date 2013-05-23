@@ -17,7 +17,6 @@
 		8B0BF961174DC95800E719CC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B0BF960174DC95800E719CC /* Default@2x.png */; };
 		8B0BF963174DC95800E719CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B0BF962174DC95800E719CC /* Default-568h@2x.png */; };
 		8B0BF966174DC95800E719CC /* ArtIMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BF965174DC95800E719CC /* ArtIMessageViewController.m */; };
-		8B0BF969174DC95800E719CC /* ArtIMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B0BF967174DC95800E719CC /* ArtIMessageViewController.xib */; };
 		8B0BF9D4174DC99600E719CC /* XMPPAnonymousAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BF972174DC99600E719CC /* XMPPAnonymousAuthentication.m */; };
 		8B0BF9D5174DC99600E719CC /* XMPPDeprecatedDigestAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BF975174DC99600E719CC /* XMPPDeprecatedDigestAuthentication.m */; };
 		8B0BF9D6174DC99600E719CC /* XMPPDeprecatedPlainAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BF978174DC99600E719CC /* XMPPDeprecatedPlainAuthentication.m */; };
@@ -78,7 +77,6 @@
 		8B0BF962174DC95800E719CC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8B0BF964174DC95800E719CC /* ArtIMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtIMessageViewController.h; sourceTree = "<group>"; };
 		8B0BF965174DC95800E719CC /* ArtIMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtIMessageViewController.m; sourceTree = "<group>"; };
-		8B0BF968174DC95800E719CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ArtIMessageViewController.xib; sourceTree = "<group>"; };
 		8B0BF971174DC99600E719CC /* XMPPAnonymousAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPAnonymousAuthentication.h; sourceTree = "<group>"; };
 		8B0BF972174DC99600E719CC /* XMPPAnonymousAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPAnonymousAuthentication.m; sourceTree = "<group>"; };
 		8B0BF974174DC99600E719CC /* XMPPDeprecatedDigestAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPDeprecatedDigestAuthentication.h; sourceTree = "<group>"; };
@@ -228,7 +226,6 @@
 				8B0BF95C174DC95800E719CC /* ArtIMessageAppDelegate.m */,
 				8B0BF964174DC95800E719CC /* ArtIMessageViewController.h */,
 				8B0BF965174DC95800E719CC /* ArtIMessageViewController.m */,
-				8B0BF967174DC95800E719CC /* ArtIMessageViewController.xib */,
 				8B0BF953174DC95800E719CC /* Supporting Files */,
 			);
 			path = ArtIMessage;
@@ -524,7 +521,6 @@
 				8B0BF95F174DC95800E719CC /* Default.png in Resources */,
 				8B0BF961174DC95800E719CC /* Default@2x.png in Resources */,
 				8B0BF963174DC95800E719CC /* Default-568h@2x.png in Resources */,
-				8B0BF969174DC95800E719CC /* ArtIMessageViewController.xib in Resources */,
 				8B0BF9F3174DC99600E719CC /* README.txt in Resources */,
 				8B0BF9F9174DC99600E719CC /* build-libidn.sh in Resources */,
 			);
@@ -587,14 +583,6 @@
 				8B0BF956174DC95800E719CC /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		8B0BF967174DC95800E719CC /* ArtIMessageViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8B0BF968174DC95800E719CC /* en */,
-			);
-			name = ArtIMessageViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -707,6 +695,7 @@
 				8B0BF96E174DC95800E719CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
