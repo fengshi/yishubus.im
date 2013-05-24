@@ -6,9 +6,10 @@
 //  Copyright (c) 2013年 yishubus. All rights reserved.
 //
 
-#ifndef ArtIMessage_Constants_h
-#define ArtIMessage_Constants_h
+typedef enum _NSUserType
+{
+    UserTypeTeacher = 0,
+    UserTypeUser = 1
+} NSUserType;
 
-
-
-#endif
+#define MAIN @"192.168.0.105"

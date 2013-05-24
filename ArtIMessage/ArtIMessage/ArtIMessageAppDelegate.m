@@ -7,15 +7,32 @@
 //
 
 #import "ArtIMessageAppDelegate.h"
+#import "ArtIMessageViewController.h"
+#import "LoginViewController.h"
 
 @implementation ArtIMessageAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    
+    NSString *login = [[NSUserDefaults standardUserDefaults] objectForKey:@"code"];
+    
+//    self.window.rootViewController = con;
+    
+    if (!login) {
+        LoginViewController *loginController = [[LoginViewController alloc] init];
+        self.window.rootViewController = loginController;
+    } else {
+        ArtIMessageViewController *con = [[ArtIMessageViewController alloc] init];
+        self.window.rootViewController = con;
+    }
+    
     self.window.backgroundColor = [UIColor whiteColor];
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

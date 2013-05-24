@@ -10,4 +10,6 @@
 
 @interface ArtIMessageViewController : UIViewController
 
+@property (strong, nonatomic) UITabBarController *tabBarController;
+
 @end

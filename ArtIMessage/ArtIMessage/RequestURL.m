@@ -10,4 +10,13 @@
 
 @implementation RequestURL
 
++ (NSString *) getUrlByKey:(NSInteger)key
+{
+    switch (key) {
+            
+        default:
+            break;
+    }
+    return nil;
+}
 @end
