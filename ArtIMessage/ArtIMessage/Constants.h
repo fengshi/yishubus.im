@@ -12,7 +12,7 @@ typedef enum _NSUserType
     UserTypeUser = 1
 } NSUserType;
 
-#define OPEN_FILE_SERVER @"192.168.0.105"
-#define ACTION_MAIN      @"http://www.yishubus.com/"
+#define OPEN_FILE_SERVER @"yishubus-pc"
+#define ACTION_MAIN      @"http://192.168.0.105:7878/"
 
 #define LOGIN_URL        1

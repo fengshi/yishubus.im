@@ -70,16 +70,24 @@
 		8B0BFB42174F0AB300E719CC /* AddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BFB41174F0AB300E719CC /* AddressBook.m */; };
 		8B0BFB50174F3C4D00E719CC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BFB4E174F3C4D00E719CC /* LoginViewController.m */; };
 		8B0BFB51174F3C4D00E719CC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B0BFB4F174F3C4D00E719CC /* LoginViewController.xib */; };
-		8B9D36201755DDFD002DE0DC /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D360A1755DDFD002DE0DC /* ASIAuthenticationDialog.m */; };
-		8B9D36211755DDFD002DE0DC /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D360D1755DDFD002DE0DC /* ASIDataCompressor.m */; };
-		8B9D36221755DDFD002DE0DC /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D360F1755DDFD002DE0DC /* ASIDataDecompressor.m */; };
-		8B9D36231755DDFD002DE0DC /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D36111755DDFD002DE0DC /* ASIDownloadCache.m */; };
-		8B9D36241755DDFD002DE0DC /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D36131755DDFD002DE0DC /* ASIFormDataRequest.m */; };
-		8B9D36251755DDFD002DE0DC /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D36151755DDFD002DE0DC /* ASIHTTPRequest.m */; };
-		8B9D36261755DDFD002DE0DC /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D36191755DDFD002DE0DC /* ASIInputStream.m */; };
-		8B9D36271755DDFD002DE0DC /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D361B1755DDFD002DE0DC /* ASINetworkQueue.m */; };
-		8B9D36281755DDFD002DE0DC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D361F1755DDFD002DE0DC /* Reachability.m */; };
-		8B9D362C1755DE08002DE0DC /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D362B1755DE08002DE0DC /* JSONKit.m */; };
+		8B9D36201755DDFD002DE0DC /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D360A1755DDFD002DE0DC /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8B9D36211755DDFD002DE0DC /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D360D1755DDFD002DE0DC /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8B9D36221755DDFD002DE0DC /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D360F1755DDFD002DE0DC /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8B9D36231755DDFD002DE0DC /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D36111755DDFD002DE0DC /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8B9D36241755DDFD002DE0DC /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D36131755DDFD002DE0DC /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8B9D36251755DDFD002DE0DC /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D36151755DDFD002DE0DC /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8B9D36261755DDFD002DE0DC /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D36191755DDFD002DE0DC /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8B9D36271755DDFD002DE0DC /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D361B1755DDFD002DE0DC /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8B9D36281755DDFD002DE0DC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D361F1755DDFD002DE0DC /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8B9D362C1755DE08002DE0DC /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D362B1755DE08002DE0DC /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8B9D36461755FC83002DE0DC /* ArtIMessageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D36451755FC83002DE0DC /* ArtIMessageService.m */; };
+		8B9D36491755FD3B002DE0DC /* NetWorkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D36481755FD3B002DE0DC /* NetWorkData.m */; };
+		8B9D364B1755FD9A002DE0DC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9D364A1755FD9A002DE0DC /* CoreLocation.framework */; };
+		8B9D364D1755FDA9002DE0DC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9D364C1755FDA9002DE0DC /* CoreTelephony.framework */; };
+		8B9D364F1755FDB1002DE0DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9D364E1755FDB1002DE0DC /* QuartzCore.framework */; };
+		8B9D36511755FDB8002DE0DC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9D36501755FDB8002DE0DC /* MobileCoreServices.framework */; };
+		8B9D36531755FDC1002DE0DC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9D36521755FDC1002DE0DC /* libz.dylib */; };
+		8B9D36551755FE60002DE0DC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9D36541755FE60002DE0DC /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -224,6 +232,16 @@
 		8B9D361F1755DDFD002DE0DC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		8B9D362A1755DE08002DE0DC /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		8B9D362B1755DE08002DE0DC /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		8B9D36441755FC83002DE0DC /* ArtIMessageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtIMessageService.h; sourceTree = "<group>"; };
+		8B9D36451755FC83002DE0DC /* ArtIMessageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtIMessageService.m; sourceTree = "<group>"; };
+		8B9D36471755FD3B002DE0DC /* NetWorkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkData.h; sourceTree = "<group>"; };
+		8B9D36481755FD3B002DE0DC /* NetWorkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkData.m; sourceTree = "<group>"; };
+		8B9D364A1755FD9A002DE0DC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8B9D364C1755FDA9002DE0DC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		8B9D364E1755FDB1002DE0DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8B9D36501755FDB8002DE0DC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8B9D36521755FDC1002DE0DC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8B9D36541755FE60002DE0DC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,11 +249,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B9D36551755FE60002DE0DC /* SystemConfiguration.framework in Frameworks */,
+				8B9D36531755FDC1002DE0DC /* libz.dylib in Frameworks */,
+				8B9D36511755FDB8002DE0DC /* MobileCoreServices.framework in Frameworks */,
+				8B9D364F1755FDB1002DE0DC /* QuartzCore.framework in Frameworks */,
+				8B9D364D1755FDA9002DE0DC /* CoreTelephony.framework in Frameworks */,
+				8B0BFAC1174DECA300E719CC /* Security.framework in Frameworks */,
+				8B9D364B1755FD9A002DE0DC /* CoreLocation.framework in Frameworks */,
 				8B0BFB3E174F061000E719CC /* libsqlite3.0.dylib in Frameworks */,
 				8B0BFAC7174DECB400E719CC /* libxml2.dylib in Frameworks */,
 				8B0BFAC5174DECAF00E719CC /* libresolv.dylib in Frameworks */,
 				8B0BFAC3174DECA900E719CC /* CFNetwork.framework in Frameworks */,
-				8B0BFAC1174DECA300E719CC /* Security.framework in Frameworks */,
 				8B0BFA15174DEB5600E719CC /* UIKit.framework in Frameworks */,
 				8B0BFA17174DEB5600E719CC /* Foundation.framework in Frameworks */,
 				8B0BFA19174DEB5600E719CC /* CoreGraphics.framework in Frameworks */,
@@ -273,6 +297,12 @@
 		8B0BFA13174DEB5600E719CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B9D36541755FE60002DE0DC /* SystemConfiguration.framework */,
+				8B9D36521755FDC1002DE0DC /* libz.dylib */,
+				8B9D36501755FDB8002DE0DC /* MobileCoreServices.framework */,
+				8B9D364E1755FDB1002DE0DC /* QuartzCore.framework */,
+				8B9D364C1755FDA9002DE0DC /* CoreTelephony.framework */,
+				8B9D364A1755FD9A002DE0DC /* CoreLocation.framework */,
 				8B0BFB3D174F061000E719CC /* libsqlite3.0.dylib */,
 				8B0BFAC6174DECB400E719CC /* libxml2.dylib */,
 				8B0BFAC4174DECAF00E719CC /* libresolv.dylib */,
@@ -288,6 +318,7 @@
 		8B0BFA1A174DEB5600E719CC /* ArtIMessage */ = {
 			isa = PBXGroup;
 			children = (
+				8B9D36431755FC77002DE0DC /* service */,
 				8B0BFB3F174F0A8B00E719CC /* po */,
 				8B0BFAC8174DED6F00E719CC /* util */,
 				8B0BFA23174DEB5600E719CC /* ArtIMessageAppDelegate.h */,
@@ -609,6 +640,17 @@
 			path = JSONKit;
 			sourceTree = "<group>";
 		};
+		8B9D36431755FC77002DE0DC /* service */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D36441755FC83002DE0DC /* ArtIMessageService.h */,
+				8B9D36451755FC83002DE0DC /* ArtIMessageService.m */,
+				8B9D36471755FD3B002DE0DC /* NetWorkData.h */,
+				8B9D36481755FD3B002DE0DC /* NetWorkData.m */,
+			);
+			name = service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -735,6 +777,8 @@
 				8B9D36271755DDFD002DE0DC /* ASINetworkQueue.m in Sources */,
 				8B9D36281755DDFD002DE0DC /* Reachability.m in Sources */,
 				8B9D362C1755DE08002DE0DC /* JSONKit.m in Sources */,
+				8B9D36461755FC83002DE0DC /* ArtIMessageService.m in Sources */,
+				8B9D36491755FD3B002DE0DC /* NetWorkData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

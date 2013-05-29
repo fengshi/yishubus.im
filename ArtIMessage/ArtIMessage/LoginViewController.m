@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "ArtIMessageViewController.h"
+#import "ArtIMessageService.h"
+
 
 @interface LoginViewController ()
 
@@ -35,7 +37,18 @@
 }
 
 - (IBAction)loginAction:(id)sender {
-    ArtIMessageViewController *con = [[ArtIMessageViewController alloc] init];
-    self.view.window.rootViewController = con;
+    NSString *mail = self.userTextField.text;
+    NSString *password = self.passTextField.text;
+    
+    ArtIMessageService *service = [[ArtIMessageService alloc] init];
+    BOOL isOrno = [service isLogin:mail password:password];
+    if (isOrno) {
+        ArtIMessageViewController *con = [[ArtIMessageViewController alloc] init];
+        self.view.window.rootViewController = con;
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"登录失败!" message:@"用户名或密码输入错误!" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+
 }
 @end

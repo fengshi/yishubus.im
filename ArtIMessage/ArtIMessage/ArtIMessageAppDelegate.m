@@ -17,7 +17,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     
-    NSString *login = [[NSUserDefaults standardUserDefaults] objectForKey:@"code"];
+    NSString *login = [[NSUserDefaults standardUserDefaults] objectForKey:@"mail"];
     
 //    self.window.rootViewController = con;
     
