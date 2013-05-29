@@ -8,8 +8,11 @@
 
 typedef enum _NSUserType
 {
-    UserTypeTeacher = 0,
+    UserTypeTeacher = 2,
     UserTypeUser = 1
 } NSUserType;
 
-#define MAIN @"192.168.0.105"
+#define OPEN_FILE_SERVER @"192.168.0.105"
+#define ACTION_MAIN      @"http://www.yishubus.com/"
+
+#define LOGIN_URL        1

@@ -7,13 +7,15 @@
 //
 
 #import "RequestURL.h"
+#import "Constants.h"
 
 @implementation RequestURL
 
 + (NSString *) getUrlByKey:(NSInteger)key
 {
     switch (key) {
-            
+        case LOGIN_URL:
+            return [ACTION_MAIN stringByAppendingString:@"websitMoblieAction.do?action=login"];
         default:
             break;
     }
