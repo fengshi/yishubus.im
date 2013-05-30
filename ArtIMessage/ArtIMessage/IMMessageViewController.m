@@ -29,7 +29,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    CLLocationManager *location = [[CLLocationManager alloc] init];
+    location.distanceFilter = 500.0f;
+    location.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+    location.delegate = self;
+    
+    [location startUpdatingLocation];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,4 +43,32 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    if (locations != nil) {
+        if ([locations count] == 2) {
+            CLLocation *nowLocation = [locations objectAtIndex:1];
+            NSString *lat = [[NSString alloc] initWithFormat:@"%g",nowLocation.coordinate.latitude];
+            NSString *lng = [[NSString alloc] initWithFormat:@"%g",nowLocation.coordinate.longitude];
+            
+            [[NSUserDefaults standardUserDefaults] setObject:lat forKey:@"latitude"];
+            [[NSUserDefaults standardUserDefaults] setObject:lng forKey:@"longitude"];
+            
+        } else {
+            
+            CLLocation *nowLocation = [locations objectAtIndex:0];
+            NSString *lat = [[NSString alloc] initWithFormat:@"%g",nowLocation.coordinate.latitude];
+            NSString *lng = [[NSString alloc] initWithFormat:@"%g",nowLocation.coordinate.longitude];
+            
+            [[NSUserDefaults standardUserDefaults] setObject:lat forKey:@"latitude"];
+            [[NSUserDefaults standardUserDefaults] setObject:lng forKey:@"longitude"];
+            
+        }
+    }
+}
+
+- (void) locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    [manager stopUpdatingLocation];
+}
 @end

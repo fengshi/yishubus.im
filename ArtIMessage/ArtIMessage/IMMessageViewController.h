@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface IMMessageViewController : UIViewController
+@interface IMMessageViewController : UIViewController<CLLocationManagerDelegate>
 
 @end

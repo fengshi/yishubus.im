@@ -16,13 +16,6 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    CLLocationManager *location = [[CLLocationManager alloc] init];
-    location.distanceFilter = 500.0f;
-    location.desiredAccuracy = kCLLocationAccuracyHundredMeters;
-    location.delegate = self;
-    
-    [location startUpdatingLocation];
-    
     NSString *login = [[NSUserDefaults standardUserDefaults] objectForKey:@"mail"];
     login = @"abc";
 //    self.window.rootViewController = con;
@@ -69,32 +62,4 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-{
-    if (locations != nil) {
-        if ([locations count] == 2) {
-            CLLocation *nowLocation = [locations objectAtIndex:1];
-            NSString *lat = [[NSString alloc] initWithFormat:@"%g",nowLocation.coordinate.latitude];
-            NSString *lng = [[NSString alloc] initWithFormat:@"%g",nowLocation.coordinate.longitude];
-
-            [[NSUserDefaults standardUserDefaults] setObject:lat forKey:@"latitude"];
-            [[NSUserDefaults standardUserDefaults] setObject:lng forKey:@"longitude"];
-
-        } else {
-
-            CLLocation *nowLocation = [locations objectAtIndex:0];
-            NSString *lat = [[NSString alloc] initWithFormat:@"%g",nowLocation.coordinate.latitude];
-            NSString *lng = [[NSString alloc] initWithFormat:@"%g",nowLocation.coordinate.longitude];
-
-            [[NSUserDefaults standardUserDefaults] setObject:lat forKey:@"latitude"];
-            [[NSUserDefaults standardUserDefaults] setObject:lng forKey:@"longitude"];
-
-        }
-    }
-}
-
-- (void) locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
-{
-    [manager stopUpdatingLocation];
-}
 @end
