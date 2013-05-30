@@ -28,6 +28,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+
+    
+//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"定位失败" message:@"无法显示定位信息,请开启\"设置->隐私->定位服务\"中的APP选项" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+//    [alertView show];
     
 	self.tabBarController = [[UITabBarController alloc] init];
     [self.tabBarController.view setFrame:self.view.bounds];
